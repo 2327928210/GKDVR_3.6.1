@@ -1,0 +1,91 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '27.0.3'
+
+    defaultConfig {
+        applicationId "haoke.com.gkdvr"
+        minSdkVersion 17
+        targetSdkVersion 25
+        versionCode 58
+        versionName "GKDVR_3.6.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        externalNativeBuild {
+            cmake {
+                abiFilters 'armeabi-v7a', 'arm64-v8a'
+            }
+
+        }
+    }
+    signingConfigs {
+        release {
+            keyAlias 'apk.hfc'
+            keyPassword 'a1b2c3d4'
+            storeFile file('apk.clw')
+            storePassword 'a1b2c3d4'
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+
+    productFlavors {
+        normal {
+            applicationId "haoke.com.gkdvr"
+            buildConfigField("String", "defaultPwd", "\"12345678\"")
+        }
+
+
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    sourceSets {
+        normal.res.srcDirs = ['src/main/res-normal']
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.squareup.okhttp3:okhttp:3.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'me.dm7.barcodescanner:zxing:1.9.8'
+    //compile 'com.xw.repo:PullToRefresh:2.1@aar'
+    compile 'com.kyleduo.switchbutton:library:1.4.1'
+    compile project(':ijkplayer-java')
+    compile project(':PullToRefresh')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'cn.leancloud:java-sdk:0.1.+'
+    compile 'com.tencent.bugly:crashreport:latest.release' //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.2.0
+//    androidTestCompile('com.android.support.test.espresso:espresso-contrib:2.2.2'
+//            , {
+//        exclude group: 'com.android.support', module: 'support-annotations'
+//        exclude group: 'com.android.support', module: 'design'
+//        exclude group: 'com.android.support', module: 'recyclerview-v7'
+//        exclude group: 'com.android.support', module: 'support-v4'
+//    })
+}

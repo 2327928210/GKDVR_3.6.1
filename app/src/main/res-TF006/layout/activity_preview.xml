@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudcolor2"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/preview_title"
+        layout="@layout/title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/preview_title"
+        android:layout_above="@+id/record_time"
+        android:id="@+id/layout1"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/hint_layout"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/connect_help"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:padding="4dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:text="在WIFI列表查询并连接“DVR18S-XXXXXXXXX”\n默认密码：123456789"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:padding="4dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlDuallaoyut"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerVertical="true">
+
+        <!--主要播放界面-->
+        <LinearLayout
+            android:id="@+id/ll_dual"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <SurfaceView
+                android:id="@+id/dual"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivBackground"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#AFAFAF"
+            android:padding="50dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/play" />
+
+        <LinearLayout
+            android:id="@+id/llFloatView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="right|bottom"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btn_full"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:background="@mipmap/ic_fullscreen"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:visibility="visible" />
+
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#7f000000"
+            android:gravity="center"
+            android:id="@+id/video_buffering_mask"
+            android:clickable="true"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:padding="16.0dip"
+            android:focusable="true">
+
+            <ProgressBar
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:indeterminateDrawable="@drawable/progress_drawable_white" />
+
+        </LinearLayout>
+    </RelativeLayout>
+    <!--左右Fragment-->
+    <LinearLayout
+        android:id="@+id/record_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rlDuallaoyut"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        tools:visibility="visible"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/recoding" />
+
+        <TextView
+            android:id="@+id/tvTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBottomLayout"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rlDuallaoyut"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottom_layout"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <RelativeLayout
+                android:id="@+id/iv_main_takepic"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/bg_main_page_button">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:duplicateParentState="true"
+                    android:drawableTop="@drawable/select_take_pic"
+                    android:textColor="@drawable/select_text_color"
+                    android:drawablePadding="16dp"
+                    android:text="@string/photo_setting"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/iv_main_record"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/bg_main_page_button">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:duplicateParentState="true"
+                    android:drawableTop="@drawable/select_record"
+                    android:textColor="@drawable/select_text_color"
+                    android:drawablePadding="16dp"
+                    android:text="@string/video_setting"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/iv_main_remote_pic_main"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_main_page_button" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:duplicateParentState="true"
+                    android:drawableTop="@drawable/select_file"
+                    android:textColor="@drawable/select_text_color"
+                    android:drawablePadding="16dp"
+                    android:text="@string/remote_file"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal"
+            android:id="@+id/bottom_layout"
+            android:paddingTop="3dp">
+
+            <LinearLayout
+                android:id="@+id/llImage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp"
+                    android:src="@mipmap/photos_off" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/photo"
+                    android:textColor="#AFAFAF"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llVideoCamera"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp"
+                    android:src="@mipmap/ic_video_b" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/camera"
+                    android:textColor="#AFAFAF"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSetting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp"
+                    android:src="@mipmap/ic_setting_b" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/setting"
+                    android:textColor="#AFAFAF"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/flContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="45dp"></FrameLayout>
+
+</RelativeLayout>

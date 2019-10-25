@@ -1,0 +1,241 @@
+<resources>
+    <string name="remote_file">远程文件</string>
+    <string name="photo">本地相册</string>
+    <string name="camera">摄像机</string>
+    <string name="setting">设置</string>
+    <string name="loading">正在加载</string>
+    <string name="buffering">正在缓冲</string>
+    <string name="notice">提示</string>
+    <string name="notice_delete_file">"是否要删除以下文件?\n"</string>
+    <string name="file_exists">"文件已存在"</string>
+    <string name="notice_exit">确定要退出程序吗?</string>
+    <string name="no_device">设备未连接</string>
+    <string name="connecting">现在连接</string>
+    <string name="wifi_connecting">正在连接</string>
+    <string name="checkPassWord">验证密码</string>
+    <string name="enter_password">输入新密码</string>
+    <string name="sure">确定</string>
+    <string name="cance">取消</string>
+    <string name="Confirm_password">确认新密码</string>
+    <string name="configure">配置</string>
+    <string name="chinese">0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="wifi_connecting_fail">连接失败</string>
+    <string name="connecting_device">设备未连接,是否连接设备?</string>
+    <string name="Submiting">正在提交</string>
+    <string name="changing">正在切换</string>
+    <string name="photoing">正在拍照</string>
+    <string name="scaning">正在刷新</string>
+    <string name="taking_photo_fail">拍照失败</string>
+    <string name="taking_photo_success">拍照成功</string>
+    <string name="lock_file_success">加锁成功</string>
+    <string name="unlock_file_success">解锁成功</string>
+    <string name="delete_file_success">删除成功</string>
+    <string name="get_version_fail">获取版本信息失败</string>
+    <string name="device_disconnection">设备断开连接</string>
+    <string name="device_list">设备列表</string>
+    <string name="change_camera">切换</string>
+    <string name="restore_fail">恢复出厂设置失败</string>
+    <string name="load_video_fail">加载视频失败</string>
+    <string name="load_video_fail_retry">加载视频失败，重试中…</string>
+    <string name="restore_suceess">恢复出厂设置成功</string>
+    <string name="device_restoring">设备即将重启</string>
+    <string name="format_sd_fail">格式化SD卡失败</string>
+    <string name="format_sd_success">格式化SD卡成功</string>
+    <string name="setting_fail">设置失败</string>
+    <string name="setting_success">设置成功</string>
+    <string name="set_record_fail">参数设置失败</string>
+    <string name="set_time_fail">时间同步失败</string>
+    <string name="get_record_state_fail">获取录像状态失败</string>
+    <string name="get_record_time_fail">获取录像时长失败</string>
+    <string name="set_time_success">时间同步成功</string>
+    <string name="recording_fail">设置录像失败，请稍后再试</string>
+    <string name="recording_start">开启录像</string>
+    <string name="recording_end">停止录像</string>
+    <string name="net_fail">网络异常,请检查网络</string>
+    <string name="connect_not_ready">暂无连接</string>
+    <string name="pls_stop_recording">请先停止录像</string>
+    <string name="image_unit">张</string>
+    <string name="video_unit">个</string>
+    <string name="open_file">打开</string>
+    <string name="lock_file">加锁</string>
+    <string name="unlock_file">解锁</string>
+    <string name="download_file">下载</string>
+    <string name="delete_file">删除</string>
+    <string name="share_file">分享</string>
+    <string name="share_sina_weibo">新浪微博</string>
+    <string name="share_wechat">微信好友</string>
+    <string name="share_qq">QQ好友</string>
+    <string name="share_qzone">QQ空间</string>
+    <string name="share_wechat_moment">微信朋友圈</string>
+    <string name="delete_success">删除成功</string>
+    <string name="delete_fail">删除失败</string>
+    <string name="download_over">下载完成</string>
+    <string name="download_fail">下载失败</string>
+    <string name="cancel">取消</string>
+    <string name="ensure">确定</string>
+    <string name="deleting">删除中</string>
+    <string name="setting_sdcard">记忆卡</string>
+    <string name="image_setting">图片设置</string>
+    <string name="video_setting">录像</string>
+    <string name="photo_setting">拍照</string>
+    <string name="device_setting">装置</string>
+    <string name="version">版本</string>
+    <string name="restore">重启</string>
+    <string name="about_setting">关于</string>
+    <string name="no_more_data">暂无数据</string>
+    <string name="current_version_info">当前版本:</string>
+    <string name="sd_store">Device储存空间</string>
+    <string name="sd_total_size">容量</string>
+    <string name="sd_available">可用空间</string>
+    <string name="format">格式化</string>
+    <string name="SD_format">格式化</string>
+    <string name="No_SdCard">Device SD Card 不存在</string>
+    <string name="record_mode">录像模式</string>
+    <string name="isNeed_record_vol">录音开关</string>
+    <string name="record_vol">录像音量</string>
+    <string name="record_Resolution">分辨率</string>
+    <string name="record_Frames">帧率</string>
+    <string name="record_Quality">质量</string>
+    <string name="record_Bitrate">比特率</string>
+    <string name="record_time">录像时长</string>
+    <string name="photo_Brightness">亮度</string>
+    <string name="photo_Contrast">对比度</string>
+    <string name="photo_Hue">色调</string>
+    <string name="photo_Saturation">饱和度</string>
+    <string name="photo_Sharpness">锐度</string>
+    <string name="photo_frequency">频率</string>
+    <string name="photo_mirror">镜像</string>
+    <string name="VideoFormat">录像格式</string>
+    <string name="device_time">时间同步</string>
+    <string name="device_gsensor">灵敏度</string>
+    <string name="device_check_update">检查更新</string>
+    <string name="checking_update">正在检查更新</string>
+    <string name="update">更新</string>
+    <string name="is_update">检测到新版本,是否更新?</string>
+    <string name="update_now">立即更新</string>
+    <string name="update_later">暂不更新</string>
+    <string name="lastest_vresion">已经是最新版本</string>
+    <string name="unable_wifi">当前wifi不能连接网络,是否切换wifi</string>
+    <string name="wifi_not_open">wifi未打开</string>
+    <string name="device_reset">恢复出厂设置</string>
+    <string name="alert_reset">是否恢复出厂设置，重启生效</string>
+    <string name="alert_format_SD">确定要格式化SD卡吗？</string>
+    <string name="weibosdk_demo_toast_share_success">分享成功</string>
+    <string name="weibosdk_demo_toast_share_failed">分享失败</string>
+    <string name="weibosdk_demo_toast_share_canceled">取消分享</string>
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+    <string name="no_wechat_find">"请先安装微信应用"</string>
+    <string name="update_wechat">请先更新微信应用</string>
+    <string name="permission_denied">权限拒绝,请设置权限</string>
+    <string name="refresh">刷新</string>
+    <string name="WIFI_setting">WiFi设置</string>
+    <string name="password_setting">密码设置</string>
+    <string name="ssid">SSID :</string>
+
+    <string name="title_name">Wifi设置</string>
+    <string name="password_length">请将密码设置为8~31数字或字母</string>
+    <string name="ssid_length">请将ssid设置为1~27位数字或字母</string>
+    <string name="Empty">帐号或密码不能为空</string>
+    <string name="empty">密码不能为空</string>
+    <string name="warm">网络将断开，请稍后刷新列表重新连接</string>
+    <string name="pwd_hint">请输入8~31位数字或字母</string>
+    <string name="ssid_hint">请输入1~27位数字或字母</string>
+    <string name="set_pwd_success">设置wifi信息成功</string>
+    <string name="set_pwd_fail">设置密码失败</string>
+    <string name="password_different">密码不一致</string>
+    <string name="open_gps_hint">查找周围的行车记录仪需要您打开定位功能</string>
+    <string name="search_wifi_permission_hint">查找周围的行车记录仪需要您的位置信息权限</string>
+    <string name="scan_qrcode_permission_hint">扫码需要您的摄像机权限</string>
+    <string-array name="times">
+        <item>1分钟</item>
+        <item>3分钟</item>
+        <item>5分钟</item>
+    </string-array>
+    <string-array name="record_modes">
+        <item>自动</item>
+        <item>手动</item>
+    </string-array>
+    <string-array name="Gsensors">
+        <item>低</item>
+        <item>中</item>
+        <item>高</item>
+        <item>关</item>
+    </string-array>
+    <string-array name="Parking">
+        <item>低</item>
+        <item>中</item>
+        <item>高</item>
+        <item>关</item>
+    </string-array>
+    <string-array name="Quality">
+        <item>高</item>
+        <item>中</item>
+        <item>低</item>
+    </string-array>
+    <string-array name="Frames">
+        <item>30fps</item>
+        <item>25fps</item>
+        <item>20fps</item>
+        <item>15fps</item>
+    </string-array>
+    <string-array name="Resolution">
+        <item>1080P</item>
+        <item>720P</item>
+        <item>1080i</item>
+    </string-array>
+    <string-array name="Bitrate">
+        <item>2Mbps</item>
+        <item>3Mbps</item>
+        <item>4Mbps</item>
+        <item>5Mbps</item>
+        <item>6Mbps</item>
+        <item>7Mbps</item>
+        <item>8Mbps</item>
+    </string-array>
+    <string-array name="mirror">
+        <item>关闭镜像</item>
+        <item>水平镜像</item>
+        <item>垂直镜像</item>
+        <item>全部镜像</item>
+    </string-array>
+    <string-array name="frequency">
+        <item>50Hz</item>
+        <item>60Hz</item>
+    </string-array>
+    <string-array name="VideoFormat">
+        <item>PAL</item>
+        <item>NTSC</item>
+    </string-array>
+    <string name="sdcard_life">SD卡信息</string>
+    <string name="parking_monitoring">停车监控</string>
+    <string name="unknown">未知</string>
+    <string name="gsensor_off_donot_support_hint">此固件不支持“关”</string>
+    <string name="donot_support_hint">此固件不支持</string>
+    <string name="donot_support_setting_hint">此固件不支持设定</string>
+    <string name="sd_total">SD卡可用容量</string>
+    <string name="sd_remain">剩余容量</string>
+    <string name="sd_remain_life">剩余寿命</string>
+    <string name="sd_not_support">此卡不支持</string>
+    <string name="get_failed_later">获取失败，请稍后再试</string>
+    <string name="please_check_sd">请检查SD卡</string>
+    <string name="tip_no_more_files">没有更多文件了</string>
+    <string name="check_firmware">固件版本检测</string>
+    <string name="firmware_update">固件升级</string>
+    <string name="firmware_update_hint">升级固件过程中会自动重启行车记录仪，是否升级？</string>
+    <string name="update_firmware_restart_hint">行车记录仪即将重启，请耐心等待升级成功</string>
+    <string name="download_firmware_hint">可下载的最新固件版本:%s</string>
+    <string name="check_failed_please_connect_try">检查失败，请连接至网络后重试</string>
+    <string name="download_success_hint_update">下载完毕，点击“固件升级”继续升级，升级过程中会重启行车记录仪</string>
+    <string name="dowloaded">最新版固件%s已经下载到本地,请直接升级</string>
+    <string name="please_waiting">请稍等</string>
+
+    <string name="main_title">行车录像18S</string>
+    <string name="connect_help">连接帮助</string>
+    <string name="general_settings">通用设置</string>
+    <string name="using_help">使用帮助</string>
+    <string name="user_agreement">用户使用协议</string>
+    <string name="disclaimer">免责声明</string>
+</resources>

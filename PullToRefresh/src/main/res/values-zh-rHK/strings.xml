@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="refresh_text_color_gray">#999999</color>
+    <string name="xw_ptr_load_failed">加載失敗</string>
+    <string name="xw_ptr_load_succeeded">加載成功</string>
+    <string name="xw_ptr_loading">正在加載…</string>
+    <string name="xw_ptr_pull_to_refresh">下拉刷新</string>
+    <string name="xw_ptr_pull_up_to_load">上拉加載更多</string>
+    <string name="xw_ptr_refresh_failed">刷新失敗</string>
+    <string name="xw_ptr_refresh_succeeded">刷新成功</string>
+    <string name="xw_ptr_refreshing">正在刷新…</string>
+    <string name="xw_ptr_release_to_load">釋放立即加載</string>
+    <string name="xw_ptr_release_to_refresh">釋放立即刷新</string>
+</resources>
